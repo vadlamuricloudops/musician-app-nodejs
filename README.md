@@ -1,5 +1,5 @@
 # njmusicstore
-A simple nodejs music store sample project that demonstrates nodejs-express-mongodb features
+A simple nodejs music store sample project using nodejs-express-mongodb
 
 Steps:
 
