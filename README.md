@@ -19,6 +19,6 @@ Steps:
 
 7. Navigate to http://localhost:4000 to login.
 
-8. This application is only for demonstration purpose of nodejs features and my not incorporate full fledged functionalities in the initial code base.
+8. This application is only for demonstration purpose of nodejs features and may not incorporate full fledged functionalities in the initial code base.
 
 9. Refer to readme.docx under the readme folder for details regarding the flow
