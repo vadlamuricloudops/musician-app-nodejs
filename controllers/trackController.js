@@ -1,7 +1,7 @@
 var bodyParser=require('body-parser');
 module.exports=function(app){ 
 var mongoose= require('mongoose');
-mongoose.connect('mongodb+srv://username:password@clusterprojectdev2.b4a3t.mongodb.net/DatabaseName?retryWrites=true&w=majority',{useNewUrlParser: true, useUnifiedTopology: true,useFindAndModify:false,useCreateIndex:true, serverSelectionTimeoutMS: 30000})
+mongoose.connect('mongodb+srv://username:password@databasecluster/DatabaseName?retryWrites=true&w=majority',{useNewUrlParser: true, useUnifiedTopology: true,useFindAndModify:false,useCreateIndex:true, serverSelectionTimeoutMS: 30000})
 .catch(err => {
     console.error("Error connecting to mongo", err);
   })
