@@ -2,7 +2,14 @@ var bodyParser=require('body-parser');
 module.exports=function(app){
 /* MONGOOSE SETUP */
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://username:password@databaseserver:port/databasename',{ useNewUrlParser: true});
+mongoose.connect('mongodb+srv://username:password@clusterprojectdev2.b4a3t.mongodb.net/DatabaseName?retryWrites=true&w=majority',{useNewUrlParser: true, useUnifiedTopology: true,useFindAndModify:false,useCreateIndex:true, serverSelectionTimeoutMS: 30000})
+.catch(err => {
+    console.error("Error connecting to mongo", err);
+  })
+.then(x => {
+    console.log(
+      `Connected to Mongo!"`
+    );    
 /*Replace the above connection string with the actual connection string of your MongoDB database*/
 const Schema = mongoose.Schema;
 const UserDetail = new Schema({
@@ -70,4 +77,5 @@ app.post('/login',
     req.logout();
     res.redirect('/');
   });
+  })
 }

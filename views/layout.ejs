@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <% include templates/head.ejs %>
+    <%- include ("templates/head.ejs") %>
 </head>
 <body>
-<% include templates/header.ejs %>
+<%- include ("templates/header.ejs") %>
 <!-- Insert Body here -->
 <main role="main" class="container">
     <div class="starter-template">
         <%- body %>
     </div>
 </main>
-<% include templates/footer.ejs %>
+<%- include ("templates/footer.ejs") %>
 </body>
 </html>
